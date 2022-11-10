@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "gradle",
+			"id": "c:\\Users\\BA LEEDS\\repos\\Java-Projectapp:testapp",
+			"script": "app:test",
+			"description": "Runs the test suite.",
+			"group": "verification",
+			"project": "app",
+			"buildFile": "C:\\Users\\BA LEEDS\\repos\\Java-Project\\app\\build.gradle",
+			"rootProject": "javaproject",
+			"projectFolder": "c:\\Users\\BA LEEDS\\repos\\Java-Project",
+			"workspaceFolder": "c:\\Users\\BA LEEDS\\repos\\Java-Project",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: app:test"
+		}
+	]
+}

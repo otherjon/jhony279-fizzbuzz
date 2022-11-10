@@ -3,12 +3,27 @@
  */
 package org.johnathanperez.javaproject;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
+    @Test void fizzbuzzwordReturnsValue() {
         App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+        int i = 10;
+        assertEquals("buzz", classUnderTest.fizzbuzzword(i));
+         i = 30;
+         assertEquals("fizzbuzz", classUnderTest.fizzbuzzword(i));
+         i = 33;
+         assertEquals("fizz", classUnderTest.fizzbuzzword(i));
+         i = 99;
+         assertEquals("fizz", classUnderTest.fizzbuzzword(i));
+         i = 44;
+         assertEquals("44", classUnderTest.fizzbuzzword(i));
+         i = 1;
+         assertEquals("1", classUnderTest.fizzbuzzword(i));
+         i = 90;
+         assertEquals("fizzbuzz", classUnderTest.fizzbuzzword(i));
+
     }
 }

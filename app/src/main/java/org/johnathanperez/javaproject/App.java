@@ -4,10 +4,7 @@
 package org.johnathanperez.javaproject;
 
 public class App {
-    public String fizzbuzzword (int i)
-    
-    int i = 123;
-    {
+    public String fizzbuzzword (int i) {
         if (i % 15 == 0) {
            return "fizzbuzz";
         
@@ -17,14 +14,26 @@ public class App {
         } else if (i % 3 == 0) {
             return "fizz";
         
-        } else {return String (i) i}
+        } else {
+            return String.valueOf(i);
+        }
 
         
     }
 
 
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+    public static void main(String[] args){
+
+        App fizzBuzzApp;
+        fizzBuzzApp = new App();
+    
+        int i;    
+        for (i=1; i<101; i++ ){
+             System.out.println(fizzBuzzApp.fizzbuzzword(i));
+
+        }
     }
+
+    
 }
